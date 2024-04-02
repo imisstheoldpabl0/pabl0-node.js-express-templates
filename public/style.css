@@ -1,0 +1,80 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ROOT */
+:root {
+    /* GREY SCALE */
+    --dark-grey: #121212;
+    --medium-grey: #444444;
+    --grey: #868686;
+    --light-grey: #dedede;
+    --white: #ffffff;
+
+    /* PALETTE 1 */
+    --dark-blue: #112D4E;
+    --blue: #3F72AF;
+    --light-blue: #DBE2EF;
+    --not-white: #F9F7F7;
+
+    --orange1: #CA7A55;
+    --yellow1: #FBD865;
+    --yellow2: #fCCE36;
+
+    --peach-yellow: #FEDF99ff;
+    --butterscotch: #E79D53ff;
+    --engineering-orange: #B4140Dff;
+    --black: #000000ff;
+
+    --raisin-black: #312027ff;
+    --rose-taupe: #816664ff;
+    --khaki: #BCA695ff;
+    --sunset: #EDD0A2ff;
+    --black: #000000ff;
+
+}
+
+/* NAV */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+
+    ul {
+        padding-inline-start: 0px;
+        background-color: transparent;
+    }
+
+
+    /* LIST ITEMS */
+    ul>li {
+        list-style-type: none;
+        display: inline-flex;
+        padding: 8px 16px;
+        background-color: transparent;
+    }
+
+    /* LINKS + TEXT */
+    a {
+        color: var(--orange1);
+        /* text color */
+        text-decoration: none;
+        padding: 2px 8px;
+        border-radius: 3px;
+        background-color: transparent;
+
+    }
+
+    a:hover {
+        background-color: var(--orange1);
+        /* background color on hover*/
+        color: var(--not-white);
+        /* text color on hover*/
+        transform: scale(1.15);
+        transition: 0.55s;
+        cursor: pointer;
+        box-shadow: 0 0 12px 1px var(--orange1);
+        /* box shadow color on hover*/
+    }
+}
